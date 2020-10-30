@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration>
+  <job>
+    <Template>kripa<Template/>
+    <ScanFolder>joy<ScanFolder/>
+    <Application>john<Application/>
+	<TestPolicy>thomas<TestPolicy/>
+  </job>
+</Configuration>
+
