@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Configuration>
 	<job>
-		<templateId>1</templateId>
+		<templateId>65</templateId>
 		<folderId>1</folderId>
 		<applicationId>1</applicationId>
 		<testPolicyId>1</testPolicyId>
