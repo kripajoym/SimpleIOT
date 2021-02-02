@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Configuration>
-		<templateId></templateId>
-		<folderId></folderId>
-		<testPolicyId>1</testPolicyId>
-		<designatedAgentServer></designatedAgentServer>
+  <job>
+    <folderId>1</folderId>
+    <templateId>65</templateId>
+    <testPolicyId>1</testPolicyId>
+    <applicationId>1</applicationId>
+    <designatedAgentServer></designatedAgentServer>
+  </job>
 </Configuration>
 
