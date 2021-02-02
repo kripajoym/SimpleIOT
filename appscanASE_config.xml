@@ -3,7 +3,6 @@
 	<job>
 		<templateId>65</templateId>
 		<folderId></folderId>
-		<applicationId>1</applicationId>
 		<testPolicyId>1</testPolicyId>
 		<DesignatedAgentServer></DesignatedAgentServer>
   	</job>
