@@ -2,7 +2,7 @@
 <Configuration>
   <job>
     <folderId>1</folderId>
-    <templateId>65</templateId>
+    <templateId>23</templateId>
     <testPolicyId>1</testPolicyId>
     <applicationId>1</applicationId>
     <designatedAgentServer></designatedAgentServer>
