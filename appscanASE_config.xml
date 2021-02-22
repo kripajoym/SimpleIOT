@@ -5,7 +5,7 @@
     <templateId>23</templateId>
     <testPolicyId>1</testPolicyId>
     <applicationId>1</applicationId>
-    <designatedAgentServer></designatedAgentServer>
+    <designatedAgentServerId></designatedAgentServerId>
   </job>
 </Configuration>
 
