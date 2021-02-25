@@ -4,7 +4,7 @@
     <folderId>5</folderId>
     <templateId>23</templateId>
     <testPolicyId>1</testPolicyId>
-    <applicationId>1</applicationId>
+    <applicationId></applicationId>
     <designatedAgentServerId></designatedAgentServerId>
   </job>
 </Configuration>
