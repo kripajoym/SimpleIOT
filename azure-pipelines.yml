@@ -20,7 +20,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: HCLAppScan@1
+- task: Joy.ApplicationSecurity-VSTS.custom-build-release-task.HCLAppScan
   inputs:
     AppSecTestService: 'ASoCProduction'
     applications: 'c77eb298-9b34-4aef-801f-d404a6960f43'
