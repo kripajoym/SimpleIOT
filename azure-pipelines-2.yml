@@ -25,3 +25,20 @@ steps:
     AppSecTestService: 'ASoCProduction'
     applications: 'c77eb298-9b34-4aef-801f-d404a6960f43'
     scantype: 'static'
+- task: HCLAppScan@1
+  inputs:
+    AppSecTestService: 'ASoCProduction'
+    applications: 'c77eb298-9b34-4aef-801f-d404a6960f43'
+    scantype: 'static'
+- task: HCLAppScan@2
+  inputs:
+    AppSecTestService: 'ASoCProduction'
+    applications: 'c77eb298-9b34-4aef-801f-d404a6960f43'
+    scantype: 'static'
+- task: HCL AppScan Enterprise@2
+  inputs:
+    ServiceEndPointAse: 'Kripa_ASE'
+    jobName: 'testUpdate'
+    folderId: 5
+    templateId: 13
+    testPolicyId: 7
