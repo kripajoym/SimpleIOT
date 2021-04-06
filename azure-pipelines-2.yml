@@ -25,7 +25,7 @@ steps:
     AppSecTestService: 'ASoCProduction'
     applications: 'c77eb298-9b34-4aef-801f-d404a6960f43'
     scantype: 'static'
-- task: HCLAppScan@1
+- task: Joy.ApplicationSecurity-VSTS.custom-build-release-task.HCLAppScan@1
   inputs:
     AppSecTestService: 'ASoCProduction'
     applications: 'c77eb298-9b34-4aef-801f-d404a6960f43'
