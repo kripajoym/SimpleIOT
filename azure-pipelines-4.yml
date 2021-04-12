@@ -20,7 +20,6 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: HCLAppScan@1
+- task: HCL AppScan Enterprise@2
   inputs:
-    AppSecTestService: 'EUProd'
-    scantype: 'static'
+    ServiceEndPointAse: 'Kripa_ASE'
