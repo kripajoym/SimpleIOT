@@ -1,0 +1,18 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: HCLAppScan@1
+  inputs:
+    AppSecTestService: 'ProdJoy'
+    applications: 'c77eb298-9b34-4aef-801f-d404a6960f43'
+    scanname: 'StaticYaml'
+    scantype: 'static'
