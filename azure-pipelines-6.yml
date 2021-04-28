@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: HCLAppScan@2
+- task: HCLAppScanOnCloud@2
   inputs:
     AppSecTestService: 'ProdJoy'
     applications: 'c77eb298-9b34-4aef-801f-d404a6960f43'
