@@ -24,4 +24,4 @@ steps:
     templateId: 13
     testPolicyId: 7
     loginMethod: 'None'
-    startingURL: 'http://10.115.88.89:8803/WebGoat/login.mvc'
+    startingURL: 'http://10.115.153.71:18080/WebGoat/login.mvc'
