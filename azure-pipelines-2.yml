@@ -11,4 +11,10 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+- task: HCLAppScanOnCloud@2
+  inputs:
+    AppSecTestService: 'ProdUSJoy'
+    applications: 'c77eb298-9b34-4aef-801f-d404a6960f43'
+    scantype: 'mobile'
+    appFile: 'demo.apk'
 
