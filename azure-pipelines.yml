@@ -14,7 +14,7 @@ steps:
 - task: HCL AppScan Enterprise@2
   inputs:
     ServiceEndPointAse: 'ASE_Kripa_Joy'
-    jobName: 'AzureYamlTest'
+    jobName: 'AzureYamlTestJoy'
     folderId: 6
     templateId: 13
     testPolicyId: 7
