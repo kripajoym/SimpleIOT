@@ -13,8 +13,9 @@ steps:
   displayName: 'Run a one-line script'
 - task: HCLAppScanOnCloud@2
   inputs:
-    AppSecTestService: 'ProdUSJoy'
-    applications: 'c77eb298-9b34-4aef-801f-d404a6960f43'
+    AppSecTestService: 'StageJoy'
+    applications: 'fcae1363-8917-4b1b-8842-5ef0e143cd7c'
     scantype: 'mobile'
     appFile: 'demo.apk'
+
 
