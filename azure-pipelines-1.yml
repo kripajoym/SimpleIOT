@@ -2,9 +2,7 @@
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
-jobs:
-- job: myJob
-  timeoutInMinutes: 0
+
 trigger: none
 
 pool:
@@ -20,4 +18,3 @@ steps:
     applications: 'c77eb298-9b34-4aef-801f-d404a6960f43'
     scantype: 'dynamic'
     scanURL: 'http://demo.testfire.net/'
-    type: staging
