@@ -16,12 +16,16 @@ final class ConsulClient(val settings: AkkaBootstrapperSettings) {
       throw new IllegalStateException( 
         s"Service registration not successful. Got response code ${response.code} with body ${response.body}")
     }
+    if (!response.is2xx) {
+      throw new IllegalStateException( 
+        s"Service registration not successful. Got response code ${response.code} with body ${response.body}")
+    }
   } 
 
   def deregister(serviceId: String): Unit = {
     val response = Http(s"http://$consulApiHost:$consulApiPort/v1/agent/service/deregister/$serviceId").put("").asString
     if (!response.is2xx) {
-      throw new IllegalStateException(  
+      throw new IllegalStateException(      
         s"Service de-registration not successful. Got response code ${response.code} with body ${response.body}")
     }   
 
