@@ -1,0 +1,25 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: Joy.ApplicationSecurity-VSTS-Dev.custom-asoc-task.HCLAppScanOnCloud@2
+  displayName: 'Run HCL AppScan on Cloud Security Test'
+  inputs:
+    AppSecTestService: ProdUSJoy
+    applications: 'c77eb298-9b34-4aef-801f-d404a6960f43'
+    scanname: ASe
+    scantype: dynamic
+    scanURL: 'https://10.115.88.227:9443/ase'
+    OpenSourceScanOnly: ancd
+    type: none
+    loginMethod: None
+    dynamicpresence: '2eb815d3-755d-ec11-94f6-2818780a4811'
+    optimization: false
