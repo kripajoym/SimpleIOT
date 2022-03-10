@@ -18,4 +18,4 @@ steps:
     applications: 'c77eb298-9b34-4aef-801f-d404a6960f43'
     scanname: 'TestMob'
     scantype: 'mobile'
-    appFile: '/demo.apk'
+    appFile: 'demo.apk'
