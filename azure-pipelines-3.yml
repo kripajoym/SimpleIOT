@@ -1,0 +1,19 @@
+
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger: none
+
+pool: Madlab
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+- task: HCLAppScanOnCloud@2
+  inputs:
+    AppSecTestService: 'StageJoy'
+    applications: 'fcae1363-8917-4b1b-8842-5ef0e143cd7c'
+    scantype: 'mobile'
+    appFile: 'demo.apk'
